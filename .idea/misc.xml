@@ -4,8 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/KOTLIN/Udemy/CashFlow/app/src/main/res/drawable/penjelas_complete_regis.xml" value="0.132" />
+        <entry key="..\:/KOTLIN/Udemy/CashFlow/app/src/main/res/layout/activity_add_page.xml" value="0.20863616930312098" />
         <entry key="..\:/KOTLIN/Udemy/CashFlow/app/src/main/res/layout/activity_home_page.xml" value="0.1881145788798632" />
         <entry key="..\:/KOTLIN/Udemy/CashFlow/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/KOTLIN/Udemy/CashFlow/app/src/main/res/layout/data_card_home.xml" value="0.20778110303548525" />
       </map>
     </option>
   </component>

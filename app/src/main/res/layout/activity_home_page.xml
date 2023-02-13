@@ -3,55 +3,76 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/abuabu"
     android:layout_height="match_parent"
+    android:background="@color/abuabu"
     tools:context=".HomePage">
 
-    <TextView
-        android:textStyle="bold"
-        android:id="@+id/tv_greeting"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="20dp"
-        android:textSize="20sp"
-        android:textColor="@color/hitam"
-        android:text="Hi, Made Reihan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_homepage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30dp"
+        android:backgroundTint="@color/pinkTua"
+        android:src="@drawable/plus" />
 
     <TextView
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="20dp"
-        android:textAlignment="center"
-        android:layout_alignParentRight="true"
+        android:id="@+id/tv_greeting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Hi, Made Reihan"
+        android:textColor="@color/hitam"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
         android:layout_toEndOf="@+id/tv_greeting"
         android:text="12-02-2023"
+        android:textAlignment="center"
         android:textColor="@color/hitam"
         android:textSize="16sp" />
 
     <TextView
         android:id="@+id/tv_total_yang_kamu_punya"
-        android:textColor="@color/hitam"
-        android:textStyle="bold"
-        android:textSize="25sp"
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/tv_greeting"
-        android:text="Total yang kamu punya"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_greeting"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Total yang kamu punya"
+        android:textColor="@color/hitam"
+        android:textSize="25sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/tv_total_uang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@id/tv_total_yang_kamu_punya"
         android:layout_centerHorizontal="true"
-        android:textColor="@color/hitam"
-        android:textStyle="bold"
-        android:textSize="25sp"
         android:layout_marginTop="20dp"
         android:text="Rp. 1.000.000"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:textColor="@color/hitam"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/rv_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_total_uang"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="20dp"
+        tools:listitem="@layout/data_card_home" />
 
 </RelativeLayout>

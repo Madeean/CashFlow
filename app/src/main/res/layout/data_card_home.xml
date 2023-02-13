@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="10dp"
+
+    android:id="@+id/list_data_history_pembayaran"
+    android:layout_width="match_parent" android:orientation="vertical"
+    android:background="@drawable/button_pink_gradasi_18"
+    android:backgroundTint="@color/abuabu"
+
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:elevation="5dp"
+        android:background="@drawable/button_pink_gradasi_18"
+        android:backgroundTint="@color/abuabutua"
+        android:layout_centerHorizontal="true"
+        android:layout_width="310dp"
+        android:layout_height="177dp">
+
+        <TextView
+            android:id="@+id/nama_pengontrak_card"
+            android:paddingTop="17dp"
+            android:paddingLeft="19dp"
+            android:text="Madee"
+            android:textSize="14sp"
+            android:textColor="@color/hitam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:drawableStart="@drawable/pemasukan"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/nama_pengontrak_card"
+            android:id="@+id/bayar_pengontrak_card"
+            android:layout_marginVertical="25dp"
+            android:text="Rp. 100.000"
+            android:textSize="16sp"
+            android:textColor="@color/biruTua"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/status_lunas_pengontrak_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingTop="17dp"
+            android:paddingRight="20dp"
+            android:text="26-02-2023"
+            android:textColor="@color/hitam"
+            android:textSize="14sp" />
+
+
+        <Button
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/btn_detail_transaksi"
+            android:layout_centerHorizontal="true"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_pink_gradasi_18"
+            android:backgroundTint="@color/biruMuda"
+            android:text="Hapus"
+            android:textColor="@color/hitam"
+            android:textAllCaps="false" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+
+

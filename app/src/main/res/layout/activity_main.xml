@@ -27,6 +27,7 @@
             android:textColorHint="@color/hitam" />
 
         <com.omega_r.libs.OmegaCenterIconButton
+            android:id="@+id/btn_simpan_mainactivity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/et_nama_mainactivity"
